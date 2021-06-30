@@ -60,7 +60,7 @@ export class ActualizarusuarioComponent implements OnInit {
         no_control: '17330438'
       };
        this.service.putUsuario( this.id,usuario ).subscribe(res =>{
-         this.router.navigate(['/fomulario2206/tabla']);
+         this.router.navigate(['fomulario2206/tabla']);
        });
     }
   }
