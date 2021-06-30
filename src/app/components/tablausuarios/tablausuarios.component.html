@@ -15,7 +15,7 @@
         <td>{{usuario.correo}}</td>
         <td>{{usuario.rol}}</td>
         <td>
-          <button (click)="actualizar(i)" data-bs-toggle="modal" data-bs-target="#exampleModal"   class="btn btn-secondary" [routerLink] ="['/fomulario2206/actualizar',usuario._id]">Actualizar</button>
+          <button (click)="actualizar(i)" data-bs-toggle="modal" data-bs-target="#exampleModal"   class="btn btn-secondary" [routerLink] ="['/actualizar',usuario._id]">Actualizar</button>
           <button (click)="eliminar(i)" class="btn btn-danger">Eliminar</button>
         </td>
       </tr>

@@ -38,7 +38,7 @@ export class CrearusuarioComponent implements OnInit {
       // console.log(usuario);
       this.service.postUsuario( usuario ).subscribe(res =>{
         console.log(res);
-        this.router.navigate(['fomulario2206/tabla']);
+        this.router.navigate(['tabla']);
       });
     }
   }
