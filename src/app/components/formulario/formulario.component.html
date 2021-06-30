@@ -1,0 +1,25 @@
+<form [formGroup]="formulario">
+     <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nombre</label>
+        <input formControlName ="nombre" type="text" class="form-control" id="exampleInputEmail1" >
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input formControlName ="correo" type="email" class="form-control" id="exampleInputEmail1" >
+
+    </div>
+
+   
+    <div class="mb-3">
+        <select formControlName ="rol" class="form-select" aria-label="Default select example">
+            <option selected>Rol</option>
+            <option value="1">USER_ROLE</option>
+            <option value="2">Rol 2</option>
+            <option value="3">Rol 3</option>
+        </select>
+    </div>
+    
+    <div class="mb-3">
+        <button (click) = "guardar()" type="submit" class="btn btn-primary">Guardar informacion</button>
+    </div>
+</form>
